@@ -4,7 +4,7 @@ Mirror hosting binaries of Podman and its dependencies
 ## Installation
 ```
 sudo apt update
-sudo apt install curl tar gpg wget
+sudo apt install curl tar gpg wget uidmap
 curl -L https://github.com/BastianSolutionsRandD/podman-apt-mirror/releases/download/v5.3.1/InstallPodmanApt | bash
 ```
 
