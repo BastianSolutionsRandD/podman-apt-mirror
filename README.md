@@ -15,7 +15,7 @@ sudo apt purge \
     golang-github-containers-image \
     golang-github-containernetworking-plugin-dnsname \
     podman && \
-curl -L https://github.com/BastianSolutionsRandD/podman-apt-mirror/releases/download/v5.3.1/InstallPodmanApt | bash
+curl -L https://github.com/BastianSolutionsRandD/podman-apt-mirror/releases/latest/download/InstallPodmanApt | bash
 ```
 
 ## Uninstallation
@@ -49,7 +49,7 @@ THIRD_PARTY_PACKAGES=(
 apt list ${THIRD_PARTY_PACKAGES[@]}
 sudo apt remove ${THIRD_PARTY_PACKAGES[@]}
 
-sudo rm -rf "/usr/local/src/podman/v5.3.1"
+sudo rm -rf "/usr/local/src/podman"
 sudo rm /etc/apt/sources.list.d/podman-local.list
 sudo rm /etc/apt/trusted.gpg.d/bastian.gpg 
 sudo apt update
