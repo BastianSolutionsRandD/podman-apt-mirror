@@ -5,16 +5,7 @@ Mirror hosting binaries of Podman and its dependencies
 ```
 sudo apt update
 sudo apt install curl tar gpg wget uidmap
-sudo apt purge \
-    buildah \
-    catatonit \
-    conmon \
-    crun \
-    fuse-overlayfs \
-    golang-github-containers-common \
-    golang-github-containers-image \
-    golang-github-containernetworking-plugin-dnsname \
-    podman && \
+sudo apt purge podman* golang-github-container* && \
 curl -L https://github.com/BastianSolutionsRandD/podman-apt-mirror/releases/latest/download/InstallPodmanApt | bash
 ```
 
